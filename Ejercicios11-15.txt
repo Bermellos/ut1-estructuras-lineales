@@ -1,0 +1,57 @@
+11) La opción correcta es la 4. No tiene efecto ya que otroNodo apunta a nodo1, pero no hay nadie que lo apunte a el, asiq ue queda "flotando" fuera de la lista.
+
+Sean nodo1, nodo2 y nodo3 tres nodos consecutivos (nodo2 sigue a nodo1, nodo3 
+sigue a nodo2), y el siguiente fragmento de código: 
+// en algún lado se crea el nodo “otroNodo” 
+otroNodo.siguiente = nodo1 
+nodo2.siguiente = nodo3 
+1. Inserta otroNodo antes de nodo1. 
+2. Inserta otroNodo entre nodo1 y nodo2. 
+3. Elimina nodo2. 
+4. No tiene efecto. 
+
+
+12) La opción correcta es la 3. Se elimina nodo2 porque nodo1 (cabeza de la lista) lo dejó de apuntar y otroNodo lo apunta pero no es el nodo cabeza.
+
+otroNodo <- nodo1.siguiente 
+nodo1.siguiente <- nodo3 
+1. Inserta otroNodo antes de nodo1. 
+2. Inserta otroNodo entre nodo1 y nodo2. 
+3. Elimina nodo2. 
+4. No tiene efecto. 
+
+
+13) La opción correcta es la 2. otroNodo queda entre nodo1 y nodo2 porque otroNodo apunta a nodo2 y nodo1 deja de apuntar a nodo2 y apunta a otroNodo, quedando en medio. 
+
+otroNodo.siguiente <- nodo1.siguiente 
+nodo1.siguiente <- otroNodo 
+1. Inserta otroNodo antes de nodo1. 
+2. Inserta otroNodo entre nodo1 y nodo2. 
+3. Elimina nodo2. 
+4. Error en ejecución si nodo1 es el primero o nodo3 es el último. 
+
+
+14) La opción correcta es la 4. Da error siempre porque null no puede apuntar a nada nunca.
+
+nodoActual <- primero 
+mientras nodoActual <> nulo hacer 
+   nodoActual = nodoActual.siguiente 
+fin mientras 
+nodoActual.siguiente = otroNodo 
+1. Inserta otroNodo como último nodo. 
+2. Inserta otroNodo como primer nodo. 
+3. Error si la lista está vacía. 
+4. Siempre error. 
+
+
+15) La opción correcta es la 3. Da error si la lista está vacía. El puntero primero valdría null (porque no hay elementos) y ocurriría un error instantáneo ya que no se puede hacer null.siguiente.
+
+nodoActual <- primero 
+mientras nodoActual.siguiente <> nulo hacer 
+   nodoActual <- nodoActual.siguiente 
+fin mientras 
+nodoActual.siguiente <- otroNodo 
+1. Inserta otroNodo como último nodo. 
+2. Inserta otroNodo como primer nodo. 
+3. Error si la lista está vacía. 
+4. Siempre error. 
