@@ -1,0 +1,6 @@
+101, El Quijote de la Mancha, 450, 5
+102, Harry Potter y la Piedra Filosofal, 890, 10
+103, Clean Code, 1200, 2
+101, El Quijote de la Mancha, 450, 3
+104, El Hobbit, 750.00, 7
+103, Clean Code, 1200, 5
