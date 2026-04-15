@@ -1,0 +1,94 @@
+/*
+ * Parte 1:
+ * Union
+ * precondiciones:
+ * Los dos conjuntos estan ordenados de menor a mayor
+ * Los conjuntos de entrada no tienen elementos repetidos
+ * Los elementos del conjunto deben ser comparables entre si
+ * 
+ * postcondiciones:
+ * El conjunto resultado contiene todos los elementos que estaban en cualquiera
+ * de los dos conjuntos
+ * El conjunto resultado no tiene elementos repetidos
+ * El conjunto resultado esta ordenado de menor a mayor
+ * Los conjuntos originales no son modificados
+ * 
+ * Pseudocodigo:
+ * Function Union(A: TDALista, B: TDALista): TdaLista
+ * {
+ * resultado <- nueva lista vacia
+ * i <- inicio de A
+ * j <- inicio de B
+ * 
+ * While quedan elementos en A y en B hacer
+ * {
+ * if el elemento actual de A es menor al de B
+ * {
+ * agregar el elemento de A al resultado
+ * avanzar en A
+ * }
+ * else if el elemento actual de A es mayor al de B
+ * {
+ * agregar el elemento de B al resultado
+ * avanzar en B
+ * }
+ * else if son iguales ( pertenece a los dos )
+ * {
+ * agregar uno solo al resultado
+ * avanzar en A y en B
+ * }
+ * }
+ * While quedan elementos en A hacer
+ * {
+ * agregar el elemento actual de A al resultado
+ * avanzar en A
+ * }
+ * While queden elementos en B hacer
+ * {
+ * agregar el elemento actual de B al resultado
+ * avanzar en B
+ * }
+ * devolver resultado
+ * }
+ * 
+ * 
+ * Interseccion
+ * 
+ * precondiciones:
+ * Ambos conjuntos deben estar ordenados de menor a mayor
+ * Los conjuntos de entrada no contienen elementos repetidos
+ * Los elementos del conjunto deben ser comparables entre si
+ * 
+ * postcondiciones:
+ * El conjunto resultante contiene unicamente los elementos que estan presentes
+ * en ambos conjuntos al mismo tiempo
+ * El conjunto resultante puede estar vacio si no hay elementos en comun
+ * El conjunto resultante esta ordenado de menor a mayor
+ * Los conjuntos originales no son modificados
+ * 
+ * Pseudocodigo:
+ * Function Interseccion(A: TDALista, B: TDALista): TDALista
+ * {
+ * resultado <- nueva lista vacía
+ * i <- inicio de A
+ * j <- inicio de B
+ * 
+ * While quedan elementos en A y en B hacer
+ * {
+ * If el elemento actual de A es menor al de B
+ * {
+ * avanzar en A (ese elemento no puede estar en B)
+ * }
+ * else if el elemento actual de B es menor al de A
+ * {
+ * avanzar en B (ese elemento no puede estar en A)
+ * }
+ * else (son iguales: pertenecen a la intersección)
+ * {
+ * agregar el elemento al resultado
+ * avanzar en A y en B
+ * }
+ * }
+ * Devolver resultado
+ * }
+ */
